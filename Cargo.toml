@@ -1,0 +1,12 @@
+[package]
+name = "open-records"
+version = "0.1.0"
+edition = "2021"
+description = "Pull US public records (SEC EDGAR, USAspending) straight from the agencies into a local SQLite file. No account, no API key, no broker."
+license = "MIT"
+repository = "https://github.com/Mattbusel/open-records"
+
+[dependencies]
+ureq = { version = "2", features = ["json"] }
+serde_json = "1"
+rusqlite = { version = "0.31", features = ["bundled"] }
